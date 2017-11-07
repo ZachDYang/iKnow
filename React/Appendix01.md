@@ -48,7 +48,7 @@ export default class MyComponent extends React.Component {
 }
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="2">2. Classes</h2>
 
@@ -99,7 +99,7 @@ class Photo extends React.Component {
 }
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="3">3. Method definition</h2>
 
@@ -121,7 +121,7 @@ class Photo extends React.Component {
 }
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="4">4. Property initializers</h2>
 
@@ -182,7 +182,7 @@ Todo.propTypes = {
     maxLength: React.PropTypes.number.isRequired,
 };
 ```
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="5">5. State</h2>
 
@@ -221,7 +221,7 @@ class Todo extends React.Component {
 }
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="6">6. Arrow functions</h2>
 
@@ -318,7 +318,7 @@ class TodoBtn extends React.Component{
 更多 Arrows and Lexical This 特性可以[參考這個文件](https://babeljs.io/docs/learn-es2015/#arrows)。
 
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="7">7. Dynamic property names & template strings</h2>
 
@@ -354,7 +354,7 @@ const name = "Bob", let = "today";
 `Hello ${name}, how are you ${time}?` \\ Hello Bob, how are you today?
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="8">8. Destructuring & spread attributes</h2>
 
@@ -441,7 +441,7 @@ class HelloWorld extends Component {
 export default HelloWorld;
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="9">9. Mixins</h2>
 
@@ -460,7 +460,7 @@ React.createClass({
 
 但由於官方不打算在 ES6+ 中繼續推行 `Mixins`，若還是希望使用，可以參考看看[第三方套件](https://www.npmjs.com/package/es6-class-mixin)或是[這個文件的用法](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775)。
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 <h2 id="10">10. Default Parameters</h2>
 
@@ -481,7 +481,7 @@ var link = function(height = 50, color = 'red') {
 }
 ```
 
-<div style="text-align:right;"><a href="#index">索引</a></div>
+[↑索引↑](#index)
 
 ---
 
