@@ -1,6 +1,6 @@
 # 附錄一、React ES5、ES6+ 常見用法對照表
 
-<h2 id="index">大綱</h2>
+<h2 id="index">索引</h2>
 
 1. [Modules](#1)
 2. [Classes](#2)
@@ -15,7 +15,7 @@
 
 ---
 
-<h2 id="1">1.Modules789</h2>
+<h2 id="1">1.Modules</h2>
 
 隨著 Web 技術的進展，模組化開發已經成為一個重要課題。關於 JavaScript 模組化我們這邊不詳述，建議讀者參考 [這份投影片](http://huangxuan.me/js-module-7day/#/) 和 [這篇文章](http://justineo.github.io/singles/writing-modular-js/)。
 
@@ -48,7 +48,7 @@ export default class MyComponent extends React.Component {
 }
 ```
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="2">2. Classes</h2>
 
@@ -99,7 +99,7 @@ class Photo extends React.Component {
 }
 ```
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="3">3. Method definition</h2>
 
@@ -121,7 +121,7 @@ class Photo extends React.Component {
 }
 ```
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="4">4. Property initializers</h2>
 
@@ -182,7 +182,7 @@ Todo.propTypes = {
     maxLength: React.PropTypes.number.isRequired,
 };
 ```
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="5">5. State</h2>
 
@@ -221,7 +221,7 @@ class Todo extends React.Component {
 }
 ```
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="6">6. Arrow functions</h2>
 
@@ -318,7 +318,7 @@ class TodoBtn extends React.Component{
 更多 Arrows and Lexical This 特性可以[參考這個文件](https://babeljs.io/docs/learn-es2015/#arrows)。
 
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="7">7. Dynamic property names & template strings</h2>
 
@@ -354,7 +354,7 @@ const name = "Bob", let = "today";
 `Hello ${name}, how are you ${time}?` \\ Hello Bob, how are you today?
 ```
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="8">8. Destructuring & spread attributes</h2>
 
@@ -441,7 +441,7 @@ class HelloWorld extends Component {
 export default HelloWorld;
 ```
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="9">9. Mixins</h2>
 
@@ -460,7 +460,7 @@ React.createClass({
 
 但由於官方不打算在 ES6+ 中繼續推行 `Mixins`，若還是希望使用，可以參考看看[第三方套件](https://www.npmjs.com/package/es6-class-mixin)或是[這個文件的用法](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775)。
 
-[index](#index)
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 <h2 id="10">10. Default Parameters</h2>
 
@@ -480,6 +480,8 @@ var link = function(height = 50, color = 'red') {
   ...
 }
 ```
+
+<div style="text-align:right;"><a href="#index">索引</a></div>
 
 ---
 
