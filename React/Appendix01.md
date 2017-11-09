@@ -1,21 +1,20 @@
 # 附錄一、React ES5、ES6+ 常見用法對照表
 
-<h2 id="index">索引</h2>
+## 索引
 
-1. [Modules](#1)
-2. [Classes](#2)
-3. [Method definition](#3)
-4. [Property initializers](#4)
-5. [State](#5)
-6. [Arrow functions](#6)
-7. [Dynamic property names & template strings](#7)
-8. [Destructuring & spread attributes](#8)
-9. [Mixins](#9)
-10. [Default Parameters](#10)
+1. [Modules](#1-modules)
+2. [Classes](#2-classes)
+3. [Method definition](#3-method-definition)
+4. [Property initializers](#4-property-initializers)
+5. [State](#5-state)
+6. [Arrow functions](#6-arrow-functions)
+7. [Dynamic property names & template strings](#7-dynamic-property-names-template-strings)
+8. [Destructuring & spread attributes](#8-destructuring-spread-attributes)
+9. [Mixins](#9-mixins)
+10. [Default Parameters](#10-default-parameters)
 
----
 
-<h2 id="1">1.Modules</h2>
+## 1. Modules
 
 隨著 Web 技術的進展，模組化開發已經成為一個重要課題。關於 JavaScript 模組化我們這邊不詳述，建議讀者參考 [這份投影片](http://huangxuan.me/js-module-7day/#/) 和 [這篇文章](http://justineo.github.io/singles/writing-modular-js/)。
 
@@ -48,9 +47,9 @@ export default class MyComponent extends React.Component {
 }
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="2">2. Classes</h2>
+## 2. Classes
 
 在 React 中元件（Component）是組成視覺頁面的基礎。在 ES5 中我們使用 `React.createClass()` 來建立 Component，而在 ES6+ 則是用 [Classes](https://babeljs.io/docs/learn-es2015/#classes) 繼承 `React.Component` 來建立 Component。若是有寫過 Java 等物件導向語言（OOP）的讀者應該對於這種寫法比較不陌生，不過要注意的是 JavaScript 仍是原型繼承類型的物件導向程式語言，只是使用 `Classes` 讓物件導向使用上更加直觀。對於選擇 `class` 使用上還有疑惑的讀者建議可以閱讀 [React.createClass versus extends React.Component](https://toddmotto.com/react-create-class-versus-component/) 這篇文章。
 
@@ -99,9 +98,9 @@ class Photo extends React.Component {
 }
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="3">3. Method definition</h2>
+## 3. Method definition
 
 在 ES6 中我們使用 `Method` 可以忽略 `function` 和 `,`，使用上更為簡潔！ES5 `React.createClass()` 用法：
 
@@ -121,9 +120,9 @@ class Photo extends React.Component {
 }
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="4">4. Property initializers</h2>
+## 4. Property initializers
 
 Component 屬性值是資料傳遞重要的元素，在 ES5 中我們使用 `propTypes ` 和  `getDefaultProps ` 來定義屬性（props）的預設值和型別：
 
@@ -182,9 +181,9 @@ Todo.propTypes = {
     maxLength: React.PropTypes.number.isRequired,
 };
 ```
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="5">5. State</h2>
+## 5. State
 
 在 React 中 `Props` 和 `State` 是資料流傳遞的重要元素，不同的是 `state` 可更動，可以去執行一些運算。在 ES5 中我們使用 `getInitialState ` 去初始化 `state`：
 
@@ -221,9 +220,9 @@ class Todo extends React.Component {
 }
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="6">6. Arrow functions</h2>
+## 6. Arrow functions
 
 在講 `Arrow functions` 之前，我們先聊聊在 React 中 `this` 和它所代表的 `context`。在 ES5 中，我們使用 `React.createClass()` 來建立 Component，而在 `React.createClass()` 下，預設幫你綁定好 `method` 的 `this`，你毋須自行綁定。所以你可以看到像是下面的例子，`callback function` handleButtonClick 中的  `this` 是指到 component 的實例（instance），而非觸發事件的物件：
 
@@ -318,9 +317,9 @@ class TodoBtn extends React.Component{
 更多 Arrows and Lexical This 特性可以[參考這個文件](https://babeljs.io/docs/learn-es2015/#arrows)。
 
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="7">7. Dynamic property names & template strings</h2>
+## 7. Dynamic property names & template strings
 
 以前在 ES5 我們要動態設定屬性名稱時，往往需要多寫幾行程式碼才能達到目標：
 
@@ -354,9 +353,9 @@ const name = "Bob", let = "today";
 `Hello ${name}, how are you ${time}?` \\ Hello Bob, how are you today?
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="8">8. Destructuring & spread attributes</h2>
+## 8. Destructuring & spread attributes
 
 在 React 的 Component 中，父元件利用 `props` 來傳遞資料到子元件是常見作法，然而我們有時會希望只傳遞部分資料，此時 ES6+ 中的 [Destructuring](https://babeljs.io/docs/learn-es2015/#destructuring) 和 [JSX 的 Spread Attributes
 ](https://facebook.github.io/react/docs/jsx-spread.html) ，`...` Spread Attributes 主要是用來迭代物件：
@@ -441,9 +440,9 @@ class HelloWorld extends Component {
 export default HelloWorld;
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="9">9. Mixins</h2>
+## 9. Mixins
 
 在 ES5 中，我們可以使用 `Mixins` 的方式去讓不同的 Component 共用相似的功能，重用我們的程式碼：
 
@@ -460,9 +459,9 @@ React.createClass({
 
 但由於官方不打算在 ES6+ 中繼續推行 `Mixins`，若還是希望使用，可以參考看看[第三方套件](https://www.npmjs.com/package/es6-class-mixin)或是[這個文件的用法](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775)。
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
-<h2 id="10">10. Default Parameters</h2>
+## 10. Default Parameters
 
 以前 ES5 我們函數要使用預設值需要這樣使用：
 
@@ -481,11 +480,12 @@ var link = function(height = 50, color = 'red') {
 }
 ```
 
-[↑索引↑](#index)
+[↑索引↑](#索引)
 
 ---
 
 ## 延伸閱讀
+
 1. [React/React Native 的ES5 ES6寫法對照表](http://bbs.reactnative.cn/topic/15/react-react-native-%E7%9A%84es5-es6%E5%86%99%E6%B3%95%E5%AF%B9%E7%85%A7%E8%A1%A8)
 2. [React on ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus)
 3. [react native 中ES6語法解析](http://www.ghugo.com/react-native-es6/)
@@ -497,3 +497,4 @@ var link = function(height = 50, color = 'red') {
 9. [react-native-coding-style](https://github.com/lzbSun/react-native-coding-style)
 10. [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 11. [ECMAScript 6入門](http://es6.ruanyifeng.com/)
+
